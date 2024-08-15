@@ -1,0 +1,208 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #E1DBCB; /* Latar belakang utama */
+    color: #5D624C; /* Warna font dasar */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.input-section, .result-section {
+    width: 45%;
+    background-color: #C5BEAB; /* Warna pastel cokelat muda */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Memberikan sedikit jarak antara section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-section h2 {
+    color: #5D624C; /* Warna font utama */
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #868B6B; /* Warna font untuk label */
+}
+
+.radio {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+
+.radio label {
+    display: flex;
+    align-items: center;
+    margin: 0 15px 0 0;
+    font-size: 16px;
+    color: #5D624C;
+}
+.radio input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.icon-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #868B6B;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.icon-input i {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #9CA089; /* Warna abu-abu untuk ikon */
+}
+
+.icon-input input[type="number"],
+.icon-input input[type="radio"] {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    color: #5D624C; /* Warna font dalam input */
+}
+
+.result-section {
+    width: 45%;
+    background-color: #9CA089; /* Warna pastel hijau zaitun */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.result-section h3 {
+    color: #5D624C; /* Warna hijau gelap untuk hasil */
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #5D624C; /* Warna hijau gelap untuk tombol */
+    color: #ffffff; /* Warna font putih untuk kontras */
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #868B6B; /* Warna hijau zaitun yang lebih cerah saat di-hover */
+}
+
+#bmi-status {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #5D624C; /* Warna hijau gelap untuk status */
+}
+
+#bmi-result {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #5D624C; /* Warna hijau gelap untuk hasil */
+}
+
+#bmi-category {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #5D624C; /* Warna font untuk kategori */
+}
+
+.bmi-explanation {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #C5BEAB; /* Latar belakang untuk penjelasan */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #5D624C; /* Warna teks */
+}
+
+.bmi-explanation p {
+    margin: 10px 0;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+#bmi-category {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #5D624C; /* Warna font untuk kategori */
+}
+
+.bmi-jenis-penyakit {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #C5BEAB; /* Latar belakang untuk penjelasan */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #5D624C; /* Warna teks */
+}
+
+.bmi-jenis-penyakit-explanation {
+    margin: 10px 0;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+
+.bmi-jenis-penyakit-detail p {
+    margin: 15px 0;
+    line-height: 1.6;
+    font-size: 12px;
+
+}
+
+
+.footer {
+    background-color: #5D624C; /* Warna yang sama dengan salah satu warna pastel untuk konsistensi */
+    color: #E1DBCB; /* Warna teks terang untuk kontras dengan latar belakang */
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px; /* Jarak atas untuk memberikan ruang dari konten utama */
+}
+
+.footer p {
+    margin: 5px 0; /* Mengatur jarak antara paragraf dalam footer */
+    font-size: 14px; /* Ukuran font lebih kecil untuk teks footer */
+}
+
+.footer a {
+    color: #E1DBCB; /* Warna tautan sama dengan warna teks */
+    text-decoration: none; /* Menghapus garis bawah tautan */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Menambahkan garis bawah pada hover untuk interaksi pengguna */
+}
+
+
+@media only screen and (max-width: 480px) {
+    .container {
+        flex-direction: column;/* Mengubah layout menjadi vertikal */
+        align-items: center;
+    }
+
+    .input-section, .result-section {
+        width: 100%; /* Memastikan kedua bagian menggunakan seluruh lebar layar */
+    }
+
+}
